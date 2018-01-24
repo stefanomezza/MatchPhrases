@@ -37,6 +37,9 @@ The main class of the project is the MatchPhrases class contained in the file **
 The class loads the list of phrases to detect and exposes the *find_matches* method, which takes as input the text parameter and returns a list of phrases contained in the input text.
 A simple check is done to verify that the list of matches returned doesn't contain overlapping phrases (i.e. "sore" and "sore throat"), but just the most specific one (i.e. ["sore throat"]). 
 Some unit tests for the class are located in the **test_match_phrases.py** file. These tests verify whether common cases work properly and also do some very simple stress test to verify whether the approach scales to a bigger wordlist / is able to parse a very long sentence in a reasonable amount of time.
+
+## Extra 
+
 The class **MatchNounChunks.py** implements a slightly more sophisticated version of the matching: noun chunks are extracted from the input text using the spaCy library and then each noun chunk is checked against the list of phrases. To make the research more efficient, the phrase list is sorted during the server setup and the search is implemented through a binary search algorithm. 
 
 ## Performance and behaviour considerations
