@@ -41,7 +41,7 @@ The class **MatchNounChunks.py** implements a slightly more sophisticated versio
 
 ## Performance and behaviour considerations
 
-The following table shows performances for the two classes (in terms of avg. response time in seconds) with various scenarios:
+The following table shows performances for the two classes (in terms of avg. response time in seconds) with various scenarios. (the file **speed_test.py** contains a very simple code snippet used to run these tests):
 
 |                         | Baseline   Class  | Noun Chunk Class  |
 | -------------           | ----------------- | ----------------- |
